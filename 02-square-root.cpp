@@ -1,4 +1,4 @@
-// This C++ Program calculates the square root
+// This C++ Program calculates the square root of a number.
 
 #include <iostream>
 #include <cmath>
@@ -6,14 +6,16 @@
 using namespace std;
 
 int main() {
-    // Take the input from the user
-    double number;
-    cout << "Enter a number: ";
+    int number;
+    cout << "Enter a integer: ";
+
+    // Takes the input from the user
     cin >> number;
+
     double square_root = sqrt(number);
 
     cout << "The square root of " << fixed << setprecision(3) 
-    << number << " is " << square_root << ".";
+    << number << " is " << square_root << ".\n";
     return 0;
 }
 

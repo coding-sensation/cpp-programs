@@ -7,22 +7,16 @@ using namespace std;
 int main(){
 
     float a, b, c;
-    cout << "Enter first side: ";
-    cin >> a;
-    cout << endl;
-    cout << "Enter second side: ";
-    cin >> b;
-    cout << endl;
-    cout << "Enter third side: ";
-    cin >> c;
-    cout << endl;
+    cout << "Enter three sides: ";
+    cin >> a >> b >> c;
 
-    // Calculate the semi-perimeter
+    // Calculates the semi-perimeter
     float s = (a + b + c) / 2;
 
-    // Calculate the area
+    // Calculates the area
     float area = sqrt((s * (s - a) * (s - b) * (s-c)));
-    cout<< "The area of the triangle is "<< area << endl;
+
+    cout << "The area of the triangle is "<< area << endl;
     return 0;
 }
 
